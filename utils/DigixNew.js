@@ -1,0 +1,23 @@
+Error
+java.io.IOException: content://org.telegram.messenger.provider/media/Android/data/org.telegram.messenger/files/Telegram/Telegram%20Files/DigixNew.js.txt
+	at l.۠ۨۖ.ۙۨ(N16F:201)
+	at l.ۢۡۘ.ۖۨ(118D:323)
+	at l.ۨۙ۠.ۥ(8B3R:76)
+	at l.ۨۙ۠.ۥ(Native Method)
+	at l.ۧۖ۠.call(DATL:381)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+	at java.lang.Thread.run(Thread.java:1563)
+Caused by: java.lang.SecurityException: Permission Denial: reading androidx.core.content.FileProvider uri content://org.telegram.messenger.provider/media/Android/data/org.telegram.messenger/files/Telegram/Telegram%20Files/DigixNew.js.txt from pid=20201, uid=10155 requires the provider be exported, or grantUriPermission()
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:3033)
+	at android.os.Parcel.createException(Parcel.java:3017)
+	at android.os.Parcel.readException(Parcel.java:3000)
+	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:190)
+	at android.database.DatabaseUtils.readExceptionWithFileNotFoundExceptionFromParcel(DatabaseUtils.java:153)
+	at android.content.ContentProviderProxy.openTypedAssetFile(ContentProviderNative.java:780)
+	at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:2027)
+	at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:1842)
+	at android.content.ContentResolver.openInputStream(ContentResolver.java:1518)
+	at l.۠ۨۖ.ۙۨ(N16F:199)
+	... 8 more
